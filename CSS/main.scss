@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
+$a_color: #343a40;
+$click_shadow: #212529;
+
+$desktop: 840px;
+
+@mixin desktop{
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+body, html{
+    height: 100%;
+    scroll-behavior: smooth;
+    
+}
+body{
+    margin: 0;
+    font-family: 'Barlow', sans-serif !important;
+
+    hr{
+        display: block; height: 1px;
+        border: 0; 
+        border-top: 1px solid $a_color;
+        margin: 0; 
+        padding: 0;
+    }
+
+    a{
+        color: $a_color;
+        transition: all 0.2s ease-in-out;
+        text-decoration: none;
+    }
+    a:hover{
+        color: $click_shadow;
+        text-decoration: none;
+    }
+
+    .list-group>a:hover{
+        text-decoration: none;
+        color: $click_shadow;
+        transform: scale(1.03);
+    }
+    
+    th>a{
+        font-size: 20px;
+    }
+
+    .form-control:focus{
+        border-color: $click_shadow;
+        box-shadow: inset 0px 0px 1px $click_shadow, 0px 0px 7px $click_shadow ;
+    }
+
+    .drp{
+        border-color: $click_shadow;
+        box-shadow: inset 0px 0px 1px $click_shadow, 0px 0px 7px $click_shadow ;
+    }
+    .drp>a:active{
+        background-color: white;
+        color: $a_color;
+    }
+
+    input[type=radio] {   
+        margin-left: 10px;;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%) scale(1.5);  
+    }
+    input[type=radio]:hover{
+        cursor: pointer;
+    }
+    .inputField { 
+        position: relative;
+    }
+    img{
+        width: 85%;
+    }
+    .mar-top{
+        margin-top: 250px;
+    }
+    .sidebar{
+        @include desktop{
+            position: fixed;
+        }
+    }
+    
+    .img-wrapper {
+        position: relative;
+        width: 100%;
+    }
+    .img-overlay {
+        position: absolute;
+        top: 20px;
+        bottom: 0;
+        left: 0;
+        right: 30px;
+        text-align: right;
+    }
+}
+.bar{
+    text-align: right;
+}

@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow&display=swap");
+body, html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Barlow', sans-serif !important;
+}
+
+body hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #343a40;
+  margin: 0;
+  padding: 0;
+}
+
+body a {
+  color: #343a40;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+body a:hover {
+  color: #212529;
+  text-decoration: none;
+}
+
+body .list-group > a:hover {
+  text-decoration: none;
+  color: #212529;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+body th > a {
+  font-size: 20px;
+}
+
+body .form-control:focus {
+  border-color: #212529;
+  -webkit-box-shadow: inset 0px 0px 1px #212529, 0px 0px 7px #212529;
+          box-shadow: inset 0px 0px 1px #212529, 0px 0px 7px #212529;
+}
+
+body .drp {
+  border-color: #212529;
+  -webkit-box-shadow: inset 0px 0px 1px #212529, 0px 0px 7px #212529;
+          box-shadow: inset 0px 0px 1px #212529, 0px 0px 7px #212529;
+}
+
+body .drp > a:active {
+  background-color: white;
+  color: #343a40;
+}
+
+body input[type=radio] {
+  margin-left: 10px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%) scale(1.5);
+          transform: translateY(-50%) scale(1.5);
+}
+
+body input[type=radio]:hover {
+  cursor: pointer;
+}
+
+body .inputField {
+  position: relative;
+}
+
+body img {
+  width: 85%;
+}
+
+body .mar-top {
+  margin-top: 250px;
+}
+
+@media (min-width: 840px) {
+  body .sidebar {
+    position: fixed;
+  }
+}
+
+body .img-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+body .img-overlay {
+  position: absolute;
+  top: 20px;
+  bottom: 0;
+  left: 0;
+  right: 30px;
+  text-align: right;
+}
+
+.bar {
+  text-align: right;
+}
+/*# sourceMappingURL=main.css.map */
